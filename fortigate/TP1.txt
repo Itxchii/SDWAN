@@ -6,26 +6,19 @@ config system interface
     next
     edit port2
         set mode dhcp
-    
     next
 
     edit wan
-    set mode static
-    set ip 192.168.1.2 255.255.255.0
+        set mode static
+        set ip 192.168.1.2 255.255.255.0
     next
 
     edit wan2
-    set mode dhcp
-    
+        set mode dhcp
     next
 
-    config router static​
-
+config router static​
     edit 1​
-
-    set gateway 192.168.1.1
-
-    set device "wan1"
-
-
+        set gateway 192.168.1.1
+        set device "wan1"
 end
