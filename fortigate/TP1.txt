@@ -3,18 +3,22 @@ config system interface
         set mode static
         set ip 192.168.1.99 255.255.255.0
         set allowaccess https ping ssh
+        set alias "FLUX Interface"
     next
     edit port2
         set mode dhcp
+        set alias "Port 2"
     next
 
-    edit wan
+    edit wan1
         set mode static
         set ip 192.168.1.2 255.255.255.0
+        set alias "WAN Interface"
     next
 
     edit wan2
         set mode dhcp
+        set alias "WAN 2 Interface"
     next
 
 config router static​
