@@ -12,8 +12,11 @@ config system interface
     edit wan
     set mode static
     set ip 192.168.1.2 255.255.255.0
+    next
 
-
+    edit wan2
+    set mode dhcp
+    
     next
 
     config router static​
